@@ -1,4 +1,4 @@
-# janisis/node-nginx-basic-auth-alpine
+# node-nginx-basic-auth-alpine
 
 Image containing nginx and node with process management done with supervisor.
 
@@ -50,7 +50,7 @@ stderr_logfile=/var/log/supervisor/%(program_name)s.log
 Dockerfile:
 
 ```Dockerfile
-FROM janisis/node-nginx-basic-auth-alpine
+FROM ghcr.io/jannikkeye/node-nginx-basic-auth-alpine:1.0.0
 
 COPY ./main.js .
 COPY ./nginx.conf /etc/nginx/nginx.conf

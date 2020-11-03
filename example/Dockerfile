@@ -1,4 +1,4 @@
-FROM janisis/node-nginx-basic-auth-alpine
+FROM ghcr.io/jannikkeye/node-nginx-basic-auth-alpine:1.0.0
 
 COPY ./main.js .
 COPY ./nginx.conf /etc/nginx/nginx.conf
